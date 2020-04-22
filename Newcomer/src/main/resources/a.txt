@@ -1,0 +1,11 @@
+sudo docker run --rm --net=host -e ADV_HOST=192.168.236.129 landoop/fast-data-dev
+sudo docker ps
+sudo docker exec -it xxx bash
+cd usr/local/bin
+
+kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic event_table
+
+kafka-console-consumer --bootstrap-server localhost:9092 --topic event_table --from-beginning
+kafka-console-consumer --bootstrap-server 192.168.236.129:9092 --topic event_table --from-beginning
+
+http://localhost:8080/person/ertugrul_ceylan PUT
