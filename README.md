@@ -79,9 +79,17 @@ Link: https://www.eclipse.org/downloads/
   * SmartyMessage projesi / src / main / java / com / oceylantr / smartyMessage / stream / InformNewcomerStream.java
 
 2- Her bir mikroservisin çalıştırılması için main application dosyalarının Run edilmesi gerekir. İlk event tetiğini yapacak servisin de, olayları okuyan consumer Stream servislerinin herbiri eksiksiz çalıştırılması. Aşağıdaki listedeki her bir dosyaya sağ tıklanıp, Run As diyerek Java Application seçilir ve çalıştırılır.
-* aa
-* bb
-* cc
+
+* Newcomer projesi / src / main / java / com / oceylantr / newcomer / NewcomerApplication.java
+* Account projesi / src / main / java / com / oceylantr / account / stream / AccountSetStream.java
+* Account projesi / src / main / java / com / oceylantr / account / stream / PermissionSetStream.java
+* Gift projesi / src / main / java / com / oceylantr / gift / stream / GiftPlaceStream.java
+* Gift projesi / src / main / java / com / oceylantr / gift / stream / GiftPrepareStream.java
+* Hardware projesi / src / main / java / com / oceylantr / hardware / stream / HardwareOrderStream.java
+* Hardware projesi / src / main / java / com / oceylantr / hardware / stream / HardwarePlaceStream.java
+* People projesi / src / main / java / com / oceylantr / people / stream / PersonInfoStream.java
+* People projesi / src / main / java / com / oceylantr / people / stream / PersonLocateStream.java
+* SmartyMessage projesi / src / main / java / com / oceylantr / smartyMessage / stream / InformNewcomerStream.java
 
 ### Akış denemesi
 1- Tarayıcınızdan http://localhost:8080/ajaxTest linkini çalıştırıp success mesajı aldığınızı görebiliyorsanız, ilk servis başarılı çalışmış demektir.
