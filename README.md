@@ -54,4 +54,9 @@ Link: https://www.eclipse.org/downloads/
 * yy
 * zz
 
-2- Her bir mikroservisin çalıştırılması için 
+2- Her bir mikroservisin çalıştırılması için main application dosyalarının Run edilmesi gerekir. İlk event tetiğini yapacak servisin de, olayları okuyan consumer Stream servislerinin herbiri eksiksiz çalıştırılması. Aşağıdaki listedeki her bir dosyaya sağ tıklanıp, Run As diyerek Java Application seçilir ve çalıştırılır.
+* aa
+* bb
+* cc
+
+
