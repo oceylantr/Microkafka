@@ -49,6 +49,7 @@ sudo docker ps
 sudo docker run --rm --net=host -e ADV_HOST=11.22.33.44 lensesio/fast-data-dev
 ```
 5- Bir 10 saniye bekledikten sonra Kafka kurulumunun kontrolü için daha önce aldığımız public IP'ye iki nokta üst üste Port no eklenerek bir tarayıcıdan url'i açarız. Örneğin IP'miz 11.22.33.44 ise Chrome veya Firefox'tan http://11.22.33.44:3030 adresini açmaya çalışırız. Gelen ekranda fast-data-dev'in Topics vb. başlıklarını görüyorsak sorun yok demektir.
+![alt text](https://1.bp.blogspot.com/-F3CNkzehWXs/W7Jok4-UisI/AAAAAAAAfkc/anY3gJysohw1o1_WnBK7MRkfhNH8MrbWwCLcBGAs/s1600/Screen%2BShot%2B2018-10-01%2Bat%2B11.53.22%2BPM.png)
 
 ### Kodun çalışma ortamına indirilmesi
 1- Bu hazır ve henüz konfigüre edilmemiş proje kodunu çalıştığınız bilgisayara indirmek için 2 yönteme başvurabilirsiniz.
