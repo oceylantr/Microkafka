@@ -66,9 +66,17 @@ Link: https://www.eclipse.org/downloads/
 ### Servisleri çalıştırma
 1- Servis kodlarında şu an yeni kurduğunuz Kafka'nın IP bilgisi yok. Servislerin Kafka'ya erişmesi için bazı app.properties dosyaları veya kodun içinde (ki siz kodun içine IP bilgisi koymayın hiç, ileride bunun properties'e çekicem) Kafka IP'lerinin güncellenmesi lazım. Aşağıdaki adreslerde Kafka IP'sini az önce aldığınız IP ile değiştirmeniz gerekiyor. Sonunda 2 nokta üst üste 9092 portunun kalmasına özen gösterelim. Kafka default bu porttan hizmet veriyor.
 
-* xx
-* yy
-* zz
+* Newcomer projesi / src / main / resources / application.properties dosyasında kafka.bootstrap.servers
+* Aşağıdaki projelerde kod içinde props.put ile başlayan satırlarda sadece BOOTSTRAP_SERVERS_CONFIG key'ini içeren satırlardaki IP bilgisi değişecek. 9092 yi unutmayın, o kalacak.
+* Account projesi / src / main / java / com / oceylantr / account / stream / AccountSetStream.java
+* Account projesi / src / main / java / com / oceylantr / account / stream / PermissionSetStream.java
+* Gift projesi / src / main / java / com / oceylantr / gift / stream / GiftPlaceStream.java
+* Gift projesi / src / main / java / com / oceylantr / gift / stream / GiftPrepareStream.java
+* Hardware projesi / src / main / java / com / oceylantr / hardware / stream / HardwareOrderStream.java
+* Hardware projesi / src / main / java / com / oceylantr / hardware / stream / HardwarePlaceStream.java
+* People projesi / src / main / java / com / oceylantr / people / stream / PersonInfoStream.java
+* People projesi / src / main / java / com / oceylantr / people / stream / PersonLocateStream.java
+* SmartyMessage projesi / src / main / java / com / oceylantr / smartyMessage / stream / InformNewcomerStream.java
 
 2- Her bir mikroservisin çalıştırılması için main application dosyalarının Run edilmesi gerekir. İlk event tetiğini yapacak servisin de, olayları okuyan consumer Stream servislerinin herbiri eksiksiz çalıştırılması. Aşağıdaki listedeki her bir dosyaya sağ tıklanıp, Run As diyerek Java Application seçilir ve çalıştırılır.
 * aa
