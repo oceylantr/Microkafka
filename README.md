@@ -24,7 +24,7 @@ Bir işe alım uygulaması geliştiriliyor. İşe giren kişinin ismi alındıkt
 
 5- Son butona bastıktan sonra sunucu listesinde sunucunun RUNNING konumuna geçmesi beklenir.
 
-***Önemli Uyarı: Bu çalışmanı bittiğinde kiraladığınız bu sunucuyu lütfen kapatınız. Aksi takdirde ay sonunda binlerce dolarlık bir fatura ile karşılaşabilirsiniz. İş bittiğinde yapmanız gereken sunucuya sağl tıklatıp Terminate demeniz***
+## Önemli Uyarı: Bu çalışmanı bittiğinde kiraladığınız bu sunucuyu lütfen kapatınız. Aksi takdirde ay sonunda binlerce dolarlık bir fatura ile karşılaşabilirsiniz. İş bittiğinde yapmanız gereken sunucuya sağl tıklatıp Terminate demeniz***
 
 ### Yazılımsal kurulumlar
 
