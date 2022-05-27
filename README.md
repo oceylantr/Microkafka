@@ -16,6 +16,9 @@ Bu kod örneğinde en basit haliyle bir olay tabanlı mikroservis uygulaması bu
 ### Yazılımsal kurulumlar
 
 1- Kiralanan sunucuya MobeXterm uygulaması ile SSH üzerinden bağlanılır. Bağlanırken bağlantı tipinin SSH, kullanıcı adının Ubuntu ve auth dosyası az önce indirdiğiniz PPK dosyası olacak şekilde giriş yapılır.
+
+![alt text](git_1.png)
+
 2- Ubuntu repo temizliği için aşağıdaki komut çalıştırılır:
 ```
 sudo apt-get update
