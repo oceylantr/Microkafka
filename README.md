@@ -30,7 +30,7 @@ sudo docker ps
 ```
 4- Kafka kurulum komutu için sunucunun AWS konsolundan 'public IPv4' bilgisi alınır. Örneğin bu public IP'miz 11.22.33.44 ise aşağıdaki komutu hemen çalıştırmamız gerekir:
 ```
-docker run --rm --net=host -e ADV_HOST=11.22.33.44 lensesio/fast-data-dev
+sudo docker run --rm --net=host -e ADV_HOST=11.22.33.44 lensesio/fast-data-dev
 ```
 5- Bir 10 saniye bekledikten sonra Kafka kurulumunun kontrolü için daha önce aldığımız public IP'ye iki nokta üst üste Port no eklenerek bir tarayıcıdan url'i açarız. Örneğin IP'miz 11.22.33.44 ise Chrome veya Firefox'tan http://11.22.33.44:3030 adresini açmaya çalışırız. Gelen ekranda fast-data-dev'in Topics vb. başlıklarını görüyorsak sorun yok demektir.
 
