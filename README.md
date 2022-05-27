@@ -1,6 +1,14 @@
 # Microkafka - EDA tabanlı mikroservis örneği
 
-Bu kod örneğinde en basit haliyle bir olay tabanlı mikroservis uygulaması bulacaksınız.
+Bu kod örneğinde en basit haliyle bir olay tabanlı mikroservis uygulaması bulacaksınız. 
+
+## Senaryo
+
+Bir işe alım uygulaması geliştiriliyor. İşe giren kişinin ismi alındıktan sonra bu yeni işe başlayan NEWCOMER için aynı anda:
+* Bir kullanıcı hesabı açılıp yetkiler veriliyor
+* Kullanacağı bilgisayar ve malzemeler hazırlanıyor
+* Bir ilk gün hediyesi hazırlanıyor ve masasına bırakılıyor
+* Tüm bu işler tamamlandığında kişinin telefonu veya mailine şu isimde bir hesabın açıldığı, giriş bilgileri, masasında bilgisayarının hazır olduğu ve bir sürpriz hediyenin kendisini beklediği bilgisi gönderiliyor.
 
 ## Kurulum
 
