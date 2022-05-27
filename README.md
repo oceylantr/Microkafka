@@ -7,9 +7,14 @@ Bu kod örneğinde en basit haliyle bir olay tabanlı mikroservis uygulaması bu
 ### Altyapının ayağa kaldırılması
 
 1- AWS'den Ubuntu 18.04 işletim sistemli en az 4vCpu - 16 GB Ram'ki bi sunucu kiralanır. Örneğin: t2.xlarge
+
 2- 8 GB disk eklenir
+
 3- Güvenlik ayarları tüm portlara izin verilecek şekilde ayarlanır. (Gerçek hayatta tavsiye etmiyoruz, sadece sorunsuz deneme için bu seferlik...)
+
 4- Son aşamada yeni bir keyPair dosyası oluşturulur. Tip olarak PPK dosyası tercih edilerek keyPair dosyasına isim verilir ve dosya download edilir. (Bu dosya az sonra girişte lazım olacak)
+
+5- Son butona bastıktan sonra sunucu listesinde sunucunun RUNNING konumuna geçmesi beklenir.
 
 ***Önemli Uyarı: Bu çalışmanı bittiğinde kiraladığınız bu sunucuyu lütfen kapatınız. Aksi takdirde ay sonunda binlerce dolarlık bir fatura ile karşılaşabilirsiniz. İş bittiğinde yapmanız gereken sunucuya sağl tıklatıp Terminate demeniz***
 
