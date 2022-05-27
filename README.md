@@ -1,4 +1,4 @@
-# Microkafka - ,EDA tabanlı mikroservis örneği
+# Microkafka - EDA tabanlı mikroservis örneği
 
 Bu kod örneğinde en basit haliyle bir olay tabanlı mikroservis uygulaması bulacaksınız.
 
@@ -32,6 +32,19 @@ docker run --rm --net=host -e ADV_HOST=11.22.33.44 lensesio/fast-data-dev
 ```
 5- Bir 10 saniye bekledikten sonra Kafka kurulumunun kontrolü için daha önce aldığımız public IP'ye iki nokta üst üste Port no eklenerek bir tarayıcıdan url'i açarız. Örneğin IP'miz 11.22.33.44 ise Chrome veya Firefox'tan http://11.22.33.44:3030 adresini açmaya çalışırız. Gelen ekranda fast-data-dev'in Topics vb. başlıklarını görüyorsak sorun yok demektir.
 
+### Kodun çalışma ortamına indirilmesi
+1- Bu hazır ve henüz konfigüre edilmemiş proje kodunu çalıştığınız bilgisayara indirmek için 2 yönteme başvurabilirsiniz.
+* Uğraşmak istemeyenler https://github.com/oceylantr/Microkafka sayfasındaki yeşil Code butonuna basarak projeyi Zip formatında indirebilir.
+* Eğer sisteminizde Git varsa aşağıdaki komut yardımıyla proje kopyasını çekebilirsiniz:
+```
+git clone https://github.com/oceylantr/Microkafka.git
+```
+2- Uygulamayı denemek üzere bir IDE ihtiyacımız var. Bir Eclipse versiyonu yeterli olacaktır. Makinenizin 32-64 oluşuna veya özelliklerine göre aşağıdaki linkten uygun Eclipse'i indirebilirsiniz. Sayfa sizin için uygun bir indirme önerisi ile gelecektir.
+
+Link: https://www.eclipse.org/downloads/
+
+3- Eclipse açıldığında File menüsünde Open Existing Projects from Filesystem'a tıklanarak az önce proje kodunu indirdiğiniz dizin seçilir. Gelen listede alt projeleri göreceksiniz. En tepe proje dizini olan MicroKafka'nın seçimini kaldırarak, diğer tümü seçili şekilde ilerletebilirsiniz. O ekranı geçtiğinizde Eclipse'in Package Explorer'ında bu sayfadaki proje kırılımını görebileceksiniz.
+
 ### Servisleri çalıştırma
 1- Servis kodlarında şu an yeni kurduğunuz Kafka'nın IP bilgisi yok. Servislerin Kafka'ya erişmesi için bazı app.properties dosyaları veya kodun içinde (ki siz kodun içine IP bilgisi koymayın hiç, ileride bunun properties'e çekicem) Kafka IP'lerinin güncellenmesi lazım. Aşağıdaki adreslerde Kafka IP'sini az önce aldığınız IP ile değiştirmeniz gerekiyor. Sonunda 2 nokta üst üste 9092 portunun kalmasına özen gösterelim. Kafka default bu porttan hizmet veriyor.
 
@@ -39,3 +52,4 @@ docker run --rm --net=host -e ADV_HOST=11.22.33.44 lensesio/fast-data-dev
 * yy
 * zz
 
+2- Her bir mikroservisin çalıştırılması için 
