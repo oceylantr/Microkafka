@@ -59,4 +59,12 @@ Link: https://www.eclipse.org/downloads/
 * bb
 * cc
 
-
+### Akış denemesi
+1- Tarayıcınızdan http://localhost:8080/ajaxTest linkini çalıştırıp success mesajı aldığınızı görebiliyorsanız, ilk servis başarılı çalışmış demektir.
+2- Yine tarayıcıdan http://localhost:8080/person/birinsanismi url'inin son kısmındaki birinsanismi yerine herhangi bir isim girerseniz, senaryodaki yeni işe başlayan kişinin ismi olacak. Akışın devamında bu kişiye bilgi gönderir gibi bilgilendirme ve aksiyonlar olacak.
+3- Bu akış success aldığında daha önce aldığımız IP ile açtığımız Kafka ekranı açılır ve Topics tabında event_table topic'i incelenir.
+4- Bir çok event mesajının topic'e düştüğüne ve en son event'in NEWCOMER_INFORMED tipinde olduğunu görebiliyorsak akış sona kadar başarılı ilerlemiştir.
+5- Eğer en son event kaydında NEWCOMER_INFORMED'u göremiyorsak, bunun birkaç sebebi olabilir.
+* Aradaki mikroservislerden birini çalıştırmamış olabiliriz.
+* Ara mikroservislerden biri hata almış olabilir; ilgili servisin konsolunu incelemek gerekir. Hata var mı yok mu diye.
+* İlk Newcomer projesindeki Producer ilk mesaj atılmamış olabilir.
