@@ -10,6 +10,7 @@ Bu kod örneğinde en basit haliyle bir olay tabanlı mikroservis uygulaması bu
 2- 8 GB disk eklenir
 3- Güvenlik ayarları tüm portlara izin verilecek şekilde ayarlanır. (Gerçek hayatta tavsiye etmiyoruz, sadece sorunsuz deneme için bu seferlik...)
 4- Son aşamada yeni bir keyPair dosyası oluşturulur. Tip olarak PPK dosyası tercih edilerek keyPair dosyasına isim verilir ve dosya download edilir. (Bu dosya az sonra girişte lazım olacak)
+
 ***Önemli Uyarı: Bu çalışmanı bittiğinde kiraladığınız bu sunucuyu lütfen kapatınız. Aksi takdirde ay sonunda binlerce dolarlık bir fatura ile karşılaşabilirsiniz. İş bittiğinde yapmanız gereken sunucuya sağl tıklatıp Terminate demeniz***
 
 ### Yazılımsal kurulumlar
